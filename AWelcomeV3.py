@@ -3,6 +3,7 @@ import os
 from discord.ext import commands
 import random
 
+
 from dotenv import load_dotenv
 load_dotenv()  # This loads the variables from .env into the environment
 
