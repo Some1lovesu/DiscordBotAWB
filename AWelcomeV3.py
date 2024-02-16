@@ -1,7 +1,28 @@
 import discord
 import os
+import threading
 from discord.ext import commands
 import random
+
+# Code to implement HTTP ping
+from aiohttp import web
+
+async def handle(request):
+    return web.Response(text="Bot is alive!")
+
+app = web.Application()
+app.router.add_get('/', handle)
+
+# Dynamically pull port or default to 8000
+port = int(os.getenv('Port', 8000))
+
+def run_app():
+    web.run_app(app, port=port)  # Choose a port that's available
+
+# Start the HTTP server in a separate thread
+threading.Thread(target=run_app, daemon=True).start()
+
+# Remove between brackets if fails to run
 
 from dotenv import load_dotenv
 load_dotenv()  # This loads the variables from .env into the environment
