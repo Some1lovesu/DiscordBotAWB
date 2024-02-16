@@ -121,4 +121,4 @@ async def setup_server(ctx):
 
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-bot.run('MTIwNzgzMzc1Mjc1MTgzNzE5NA.Gg36Qq.slVvLq8Q29rcuYT46KO_bop9P0sagHGAV_wW70')
+bot.run('')

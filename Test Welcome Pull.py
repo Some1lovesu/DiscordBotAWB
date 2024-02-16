@@ -16,5 +16,5 @@ async def on_member_join(member):
     if guild.system_channel is not None:
         await guild.system_channel.send(f'Welcome {member.mention} to {guild.name}! 🎉')
 def main() -> None:
-bot.run('MTIwNjYwNzM2NzU1MTMyODMwNw.GaxnkO.UdJ7WMTAgJFN3zQUhDZgRM5TL3xeFcJWNkSGa8')
+bot.run('')
 
