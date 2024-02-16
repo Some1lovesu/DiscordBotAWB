@@ -4,7 +4,7 @@ import threading
 from discord.ext import commands
 import random
 
-# Code to implement HTTP ping
+# Code to implement HTTP ping push
 from aiohttp import web
 
 async def handle(request):
